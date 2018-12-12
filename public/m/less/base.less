@@ -1,0 +1,81 @@
+// 设置全局字号
+body {
+    height: 100vh;
+    font-size: 0.18rem;
+    background-color: #fff;
+    padding: 0.45rem 0;
+}
+
+h1, h2, h3, h4, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+// 主题颜色
+@main-color: #006699;
+// 头部公共样式
+#header {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    height: 0.45rem;
+    background-color: @main-color;
+    padding: 0 0.45rem;
+    color: #fff;
+
+    h4 {
+        text-align: center;
+        line-height: 0.45rem;
+
+
+    }
+
+    a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 0.45rem;
+        height: 0.45rem;
+        text-align: center;
+        color: #fff;
+        line-height: 0.45rem;
+    }
+
+}
+
+
+#footer {
+    // position: fixed;
+    width: 100vw;
+    height: 0.45rem;
+    bottom: 0;
+    background-color: @main-color;
+
+    .mui-content {
+        background-color: transparent;
+        a {
+            display: block;
+            height: 0.45rem;
+            padding-top: 0.08rem;
+            text-align: center;
+            height: 0.45rem;
+            color: #fff;
+            span {
+                display: block;
+            }
+            &.active {
+                color: orange;
+            }
+
+    }
+    }
+    
+}

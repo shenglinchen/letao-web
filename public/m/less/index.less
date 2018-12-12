@@ -1,0 +1,117 @@
+@import "base.less";
+
+
+
+#main {
+	position: relative;
+	height: 100%;
+	
+	#nav {
+		margin: 0.1rem;
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			list-style: none;
+			li {
+				width: 33.33%;
+				a {
+					display: block;
+					width: 100%;
+					img {
+						// vertical-align是加给内容的，可以消除图片底部的3px空隙
+						vertical-align: middle;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	#banner {
+		display: flex;
+		margin: 0 0.1rem;
+		.left {
+			flex: 2;
+			a {
+				display: block;
+				font-size: 0;
+				img {
+					vertical-align: middle;
+					width: 1.18328rem;
+					height: 1.2rem;
+				}
+			}
+		}
+
+		.right {
+			flex: 1;
+			a {
+				display: block;
+				width: 100%;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	#brand {
+
+		margin: 0.1rem;
+		.title {
+			width: 100%;
+			img {
+				width: 100%;
+			}
+		}
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			li {
+				width: 25%;
+				a {
+					display: block;
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	#sport {
+		margin: 0.1rem;
+		.title {
+			a {
+				display: block;
+				img {
+					width: 100%;
+				}
+			}
+		}
+
+		.content {
+			display: flex;
+			a {
+				font-size: 0.14rem;
+				color: #666;
+				flex: 1;
+				box-shadow: 0 0 2px 2px #f0f;
+				img {
+					width: 100%;
+					
+				}
+				> span {
+					display: block;
+					text-align: center;
+					padding: 0.05rem;
+
+				}
+				p {
+						text-align: center;
+				}
+			}
+		}
+	}
+}
+
